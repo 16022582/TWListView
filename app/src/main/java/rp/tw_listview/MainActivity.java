@@ -1,7 +1,10 @@
 package rp.tw_listview;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.view.View;
+import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
 
@@ -28,5 +31,14 @@ public class MainActivity extends AppCompatActivity {
 
         aa = new CoursesAdapter(this,R.layout.row,courses);
         lv.setAdapter(aa);
+
+        lv.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
+                Courses selectedCourse = courses.get(i);
+                
+
+            }
+        });
     }
 }
