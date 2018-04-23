@@ -20,7 +20,7 @@ public class SecondActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_second);
         ListView lv = findViewById(R.id.lvModules);
-        TextView tv1 = findViewById(R.id.textViewTitle);
+        TextView tv1 = findViewById(R.id.textViewMod);
 
         Intent in = getIntent();
 
