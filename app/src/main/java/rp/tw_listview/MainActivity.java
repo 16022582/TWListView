@@ -36,6 +36,8 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
 
+                Intent in = new Intent(MainActivity.this, SecondActivity.class);
+                startActivity(in);
 
 
             }
